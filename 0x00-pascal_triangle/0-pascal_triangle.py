@@ -9,7 +9,7 @@ def pascal_triangle(n):
         Returns pascal's trangle(list of lists of integers)
         or an empty list if n <= 0
     '''
-    if n <= 0: #  validates the value of n
+    if n <= 0:  # validates the value of n
         return []
 
     # initialize triangle with a single row [1]
