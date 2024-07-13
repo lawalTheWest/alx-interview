@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 
-
 '''
     mini operation
 '''
 
+
 def minOperations(n):
-    '''def minOperation'''
+    '''
+        def minOperation
+    '''
     Ope = 0
     minope = 2
     while n > 1:
