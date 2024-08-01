@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 '''
     The N-Queens Challenge
-    more explanation in the documentation
+    more explanation in the documentation:
+        `README.md` file
 '''
 
 import sys
@@ -66,4 +67,3 @@ if __name__ == '__main__':
             print(val, end='')
         else:
             print(val)
-
