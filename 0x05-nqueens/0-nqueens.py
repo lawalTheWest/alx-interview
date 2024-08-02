@@ -15,14 +15,16 @@ if __name__ == '__main__':
     ''' validate number of args '''
     # Validate the number of command-line arguments
     if len(sys.argv) != 2:
-        # If there are not exactly two arguments (script name and N), print usage message
+        # If there are not exactly two arguments (script name and N),
+        # print usage message
         print("Usage: nqueens N")
         sys.exit(1)
         # Exit the program with status code 1 to indicate an error
 
     try:
         n = int(sys.argv[1])
-        # Try to convert the command-line argument to an integer and assign it to n
+        # Try to convert the command-line argument to an integer and
+        # assign it to n
     except ValueError:
         # If conversion fails, print an error message and exit
         print('N must be a number')
@@ -109,7 +111,8 @@ if __name__ == '__main__':
                 # Move to the next column
             else:
                 c = 0
-                # Reset column index to start from the beginning in the next row
+                # Reset column index to start from the beginning in
+                # the next row
             break
         if stop:
             # If stop flag is set, break out of the loop
@@ -121,7 +124,8 @@ if __name__ == '__main__':
             r -= 1  # Move back one row
             while r >= 0:
                 # Loop until a row is found to backtrack
-                c = placed_queens[r][1] + 1  # Set column to last placed column + 1
+                c = placed_queens[r][1] + 1
+                # Set column to last placed column + 1
                 del placed_queens[r]  # Remove the last placed queen
                 if c < n:
                     # If the column is within bounds, break out
